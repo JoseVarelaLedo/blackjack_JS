@@ -3,6 +3,12 @@ import {crearMazo , pedirCarta , valorCarta} from './usecases';
 const juego = (() => {
   'use strict'
 
+  let mazoCartas = [];
+  const tipos     = ['C', 'D', 'H', 'S'],//cada palo
+        figuras   = ['A', 'J', 'Q', 'K']; //as, j, reina y rey
+    
+
+        // prueba rara
 
   let  puntosJugadores = [], 
        ordenadorSePasa = false;
